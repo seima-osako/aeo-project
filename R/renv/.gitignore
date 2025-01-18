@@ -4,5 +4,6 @@ cellar/
 lock/
 sandbox/
 staging/
+data/
 .DS_Store
 settings.json
