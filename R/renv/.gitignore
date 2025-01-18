@@ -1,0 +1,8 @@
+library/
+local/
+cellar/
+lock/
+sandbox/
+staging/
+.DS_Store
+settings.json

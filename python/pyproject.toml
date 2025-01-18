@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "aeo-project"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+earthengine-api = "^1.4.5"
+geopandas = "^1.0.1"
+python-dotenv = "^1.0.1"
+geemap = "^0.35.1"
+rioxarray = "^0.18.2"
+rasterio = "^1.4.3"
+
+
+[tool.poetry.group.dev.dependencies]
+setuptools = "^75.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
