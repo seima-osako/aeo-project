@@ -37,7 +37,7 @@ bfmRaster = function(pixels) {
   tspx <- timeser(pixels, dates)
   bfm <- bfastmonitor(tspx, 
                       response ~ trend + harmon, 
-                      order = 3, 
+                      order = 1, 
                       start = c(2020,1))
   return(c(bfm$breakpoint, bfm$magnitude))
 }
@@ -48,4 +48,4 @@ names(bfm_results) <- c('time of break', 'magnitude of change')
 
 plot(bfm_results)
 
-writeRaster(bfm_results, "/Users/osako/github/aeo-project/R/renv/data/bfm.tif", overwrite=TRUE)
+writeRaster(bfm_results, "/Users/osako/github/aeo-project/R/renv/data/bfm_first.tif", overwrite=TRUE)
